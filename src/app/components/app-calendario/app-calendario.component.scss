@@ -1,18 +1,19 @@
 .grid-calendario{
     display: grid;
-    grid-template-columns: repeat(5, 200px);
-    gap: 45px;
+    grid-template-columns: repeat(7, 130px);
+    gap: 32px;
+    margin-left: 35px;
 
     .dia-calendario{
         display: flex;
         color: white;
-        font-size: 58px;
+        font-size: 48px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         justify-content: center;
         align-items: center;
         background-color: rgb(38, 78, 129);
-        width: 200px;
-        height: 200px;
+        width: 130px;
+        height: 130px;
         border: solid 1px black;
         border-radius: 19px;
         text-align: center;
