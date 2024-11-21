@@ -1,8 +1,18 @@
 <div class="grid-calendario">
 
     <!-- Iteração com *ngFor -->
+    <div class="dia-calendario dia-antigo" *ngFor="let dia of diasAnterior">
+      {{ dia < 10 ? '0' + dia : dia }}
+    </div>
+
+    <!-- Iteração com *ngFor -->
     <div class="dia-calendario" *ngFor="let dia of dias">
-      {{ dia }}
+      {{ dia < 10 ? '0' + dia : dia }}
+    </div>
+
+     <!-- Iteração com *ngFor -->
+    <div class="dia-calendario dia-futuro" *ngFor="let dia of diasFuturos">
+      {{ dia < 10 ? '0' + dia : dia }}
     </div>
 
 </div>
