@@ -4,6 +4,10 @@
     gap: 32px;
     margin-left: 10px;
 
+    .dia{
+        box-shadow: 6px 6px 6px 6px rgba(0, 0, 0, 0.363);
+    }
+
     .dia-antigo{
         background-color: rgb(7, 23, 44) !important;
     }
@@ -56,6 +60,7 @@
         cursor: pointer;
         background-color: rgb(35, 121, 35);
         color: white;
+        font-size: 17px;
         font-weight: bold;
         text-transform: uppercase;
     }
