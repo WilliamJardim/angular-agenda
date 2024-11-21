@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(7, 130px);
     gap: 32px;
-    margin-left: 95px;
+    margin-left: 10px;
 
     .dia-antigo{
         background-color: rgb(7, 23, 44) !important;
@@ -32,5 +32,31 @@
 
     .dia-calendario:hover{
         background-color: rgb(84, 131, 194);
+    }
+}
+
+.toolbar-calendario{
+    display: grid;
+    grid-template-columns: repeat(7, 130px);
+    gap: 32px;
+    margin-left: -19px;
+
+    div{
+        width: 20px;
+    }
+
+    button{
+        width: 200px;
+        height: 58px;
+        padding: 8px;
+        border: solid 2px black;
+        border-radius: 16px;
+        margin-top: 0px;
+        margin-bottom: 25px;
+        cursor: pointer;
+        background-color: rgb(35, 121, 35);
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
     }
 }
