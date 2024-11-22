@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { ContainerComponent } from './components/container/container.component';
 import { AppCalendarioComponent } from './components/app-calendario/app-calendario.component'; 
+import { MatDialog } from '@angular/material/dialog';
+import { DialogEventoComponent } from './components/dialog-evento/dialog-evento.component';
 
 @Component({
   selector: 'app-root',

@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { AppComponent } from '../../app.component';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogEventoComponent } from '../../components/dialog-evento/dialog-evento.component';
 
 @Component({
   selector: 'app-calendario',
@@ -14,6 +16,25 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app-calendario.component.scss'
 })
 export class AppCalendarioComponent {
+
+  constructor(private dialog: MatDialog) {
+    
+  }
+
+  openEventoDialog() {
+    const dialogRef = this.dialog.open(DialogEventoComponent, {
+      width: '300px',
+      data: {
+        titulo: 'Evento',
+        conteudo: 'Veja os eventos para esse dia:'
+      },
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('O diálogo foi fechado');
+      console.log('Resultado:', result);
+    });
+  }
 
   dias: number[] = [];
   diasAnterior: number[] = [];

@@ -1,6 +1,6 @@
 <div class="toolbar-calendario">
 
-  <button>
+  <button mat-button>
     Mes anterior
   </button>
 
@@ -10,7 +10,7 @@
   <div></div>
   <div></div>
 
-  <button>
+  <button mat-button>
     Próximo anterior
   </button>
 
@@ -24,7 +24,7 @@
     </div>
 
     <!-- Iteração com *ngFor -->
-    <div class="dia dia-calendario" *ngFor="let dia of dias">
+    <div class="dia dia-calendario" *ngFor="let dia of dias" (click)="openEventoDialog()">
       {{ dia < 10 ? '0' + dia : dia }}
     </div>
 
