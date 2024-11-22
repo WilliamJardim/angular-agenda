@@ -6,11 +6,13 @@ import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogEventoComponent } from '../../components/dialog-evento/dialog-evento.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-calendario',
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   templateUrl: './app-calendario.component.html',
   styleUrl: './app-calendario.component.scss'
